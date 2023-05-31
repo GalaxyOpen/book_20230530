@@ -19,8 +19,8 @@ public class BookDTO {
         BookDTO bookDTO = new BookDTO();
         bookDTO.setId(bookEntity.getId());
         bookDTO.setBookName(bookEntity.getBookName());
-        bookDTO.setBookPrice(bookDTO.getBookPrice());
-        bookDTO.setBookAuthor(bookDTO.getBookAuthor());
+        bookDTO.setBookPrice(bookEntity.getBookPrice());
+        bookDTO.setBookAuthor(bookEntity.getBookAuthor());
         return bookDTO;
     }
 }

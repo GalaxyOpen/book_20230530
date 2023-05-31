@@ -34,5 +34,12 @@ public class BookEntity {
         return bookEntity;
     }
 
-
+    public static BookEntity toUpdateEntity(BookDTO bookDTO) {
+        BookEntity bookEntity = new BookEntity();
+        bookEntity.setId(bookDTO.getId());
+        bookEntity.setBookName(bookDTO.getBookName());
+        bookEntity.setBookAuthor(bookDTO.getBookAuthor());
+        bookEntity.setBookPrice(bookDTO.getBookPrice());
+        return bookEntity;
+    }
 }
